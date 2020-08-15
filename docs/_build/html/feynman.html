@@ -1,0 +1,655 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>feynman package &#8212; AI Feynman  documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="feynman-package">
+<h1>feynman package<a class="headerlink" href="#feynman-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-feynman.RPN_to_eq">
+<span id="feynman-rpn-to-eq-module"></span><h2>feynman.RPN_to_eq module<a class="headerlink" href="#module-feynman.RPN_to_eq" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="feynman.RPN_to_eq.RPN_to_eq">
+<code class="sig-prename descclassname">feynman.RPN_to_eq.</code><code class="sig-name descname">RPN_to_eq</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">expr</span></em><span class="sig-paren">)</span><a class="headerlink" href="#feynman.RPN_to_eq.RPN_to_eq" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-feynman.RPN_to_pytorch">
+<span id="feynman-rpn-to-pytorch-module"></span><h2>feynman.RPN_to_pytorch module<a class="headerlink" href="#module-feynman.RPN_to_pytorch" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="feynman.RPN_to_pytorch.RPN_to_pytorch">
+<code class="sig-prename descclassname">feynman.RPN_to_pytorch.</code><code class="sig-name descname">RPN_to_pytorch</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">data</span></em>, <em class="sig-param"><span class="n">math_expr</span></em>, <em class="sig-param"><span class="n">lr</span><span class="o">=</span><span class="default_value">0.01</span></em>, <em class="sig-param"><span class="n">N_epochs</span><span class="o">=</span><span class="default_value">500</span></em><span class="sig-paren">)</span><a class="headerlink" href="#feynman.RPN_to_pytorch.RPN_to_pytorch" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-feynman.S_NN_eval">
+<span id="feynman-s-nn-eval-module"></span><h2>feynman.S_NN_eval module<a class="headerlink" href="#module-feynman.S_NN_eval" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="feynman.S_NN_eval.MultDataset">
+<em class="property">class </em><code class="sig-prename descclassname">feynman.S_NN_eval.</code><code class="sig-name descname">MultDataset</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">factors</span></em>, <em class="sig-param"><span class="n">product</span></em><span class="sig-paren">)</span><a class="headerlink" href="#feynman.S_NN_eval.MultDataset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.utils.data.dataset.Dataset</span></code></p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="feynman.S_NN_eval.NN_eval">
+<code class="sig-prename descclassname">feynman.S_NN_eval.</code><code class="sig-name descname">NN_eval</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pathdir</span></em>, <em class="sig-param"><span class="n">filename</span></em><span class="sig-paren">)</span><a class="headerlink" href="#feynman.S_NN_eval.NN_eval" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="feynman.S_NN_eval.rmse_loss">
+<code class="sig-prename descclassname">feynman.S_NN_eval.</code><code class="sig-name descname">rmse_loss</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pred</span></em>, <em class="sig-param"><span class="n">targ</span></em><span class="sig-paren">)</span><a class="headerlink" href="#feynman.S_NN_eval.rmse_loss" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-feynman.S_NN_train">
+<span id="feynman-s-nn-train-module"></span><h2>feynman.S_NN_train module<a class="headerlink" href="#module-feynman.S_NN_train" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="feynman.S_NN_train.MultDataset">
+<em class="property">class </em><code class="sig-prename descclassname">feynman.S_NN_train.</code><code class="sig-name descname">MultDataset</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">factors</span></em>, <em class="sig-param"><span class="n">product</span></em><span class="sig-paren">)</span><a class="headerlink" href="#feynman.S_NN_train.MultDataset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.utils.data.dataset.Dataset</span></code></p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="feynman.S_NN_train.NN_train">
+<code class="sig-prename descclassname">feynman.S_NN_train.</code><code class="sig-name descname">NN_train</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pathdir</span></em>, <em class="sig-param"><span class="n">filename</span></em>, <em class="sig-param"><span class="n">epochs</span><span class="o">=</span><span class="default_value">1000</span></em>, <em class="sig-param"><span class="n">lrs</span><span class="o">=</span><span class="default_value">0.01</span></em>, <em class="sig-param"><span class="n">N_red_lr</span><span class="o">=</span><span class="default_value">4</span></em>, <em class="sig-param"><span class="n">pretrained_path</span><span class="o">=</span><span class="default_value">''</span></em><span class="sig-paren">)</span><a class="headerlink" href="#feynman.S_NN_train.NN_train" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="feynman.S_NN_train.rmse_loss">
+<code class="sig-prename descclassname">feynman.S_NN_train.</code><code class="sig-name descname">rmse_loss</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pred</span></em>, <em class="sig-param"><span class="n">targ</span></em><span class="sig-paren">)</span><a class="headerlink" href="#feynman.S_NN_train.rmse_loss" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-feynman.S_add_bf_on_numbers_on_pareto">
+<span id="feynman-s-add-bf-on-numbers-on-pareto-module"></span><h2>feynman.S_add_bf_on_numbers_on_pareto module<a class="headerlink" href="#module-feynman.S_add_bf_on_numbers_on_pareto" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="feynman.S_add_bf_on_numbers_on_pareto.add_bf_on_numbers_on_pareto">
+<code class="sig-prename descclassname">feynman.S_add_bf_on_numbers_on_pareto.</code><code class="sig-name descname">add_bf_on_numbers_on_pareto</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pathdir</span></em>, <em class="sig-param"><span class="n">filename</span></em>, <em class="sig-param"><span class="n">PA</span></em>, <em class="sig-param"><span class="n">math_expr</span></em><span class="sig-paren">)</span><a class="headerlink" href="#feynman.S_add_bf_on_numbers_on_pareto.add_bf_on_numbers_on_pareto" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-feynman.S_add_snap_expr_on_pareto">
+<span id="feynman-s-add-snap-expr-on-pareto-module"></span><h2>feynman.S_add_snap_expr_on_pareto module<a class="headerlink" href="#module-feynman.S_add_snap_expr_on_pareto" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="feynman.S_add_snap_expr_on_pareto.add_snap_expr_on_pareto">
+<code class="sig-prename descclassname">feynman.S_add_snap_expr_on_pareto.</code><code class="sig-name descname">add_snap_expr_on_pareto</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pathdir</span></em>, <em class="sig-param"><span class="n">filename</span></em>, <em class="sig-param"><span class="n">math_expr</span></em>, <em class="sig-param"><span class="n">PA</span></em>, <em class="sig-param"><span class="n">DR_file</span><span class="o">=</span><span class="default_value">''</span></em><span class="sig-paren">)</span><a class="headerlink" href="#feynman.S_add_snap_expr_on_pareto.add_snap_expr_on_pareto" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="feynman.S_add_snap_expr_on_pareto.intify">
+<code class="sig-prename descclassname">feynman.S_add_snap_expr_on_pareto.</code><code class="sig-name descname">intify</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">expr</span></em><span class="sig-paren">)</span><a class="headerlink" href="#feynman.S_add_snap_expr_on_pareto.intify" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-feynman.S_add_sym_on_pareto">
+<span id="feynman-s-add-sym-on-pareto-module"></span><h2>feynman.S_add_sym_on_pareto module<a class="headerlink" href="#module-feynman.S_add_sym_on_pareto" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="feynman.S_add_sym_on_pareto.add_sym_on_pareto">
+<code class="sig-prename descclassname">feynman.S_add_sym_on_pareto.</code><code class="sig-name descname">add_sym_on_pareto</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pathdir</span></em>, <em class="sig-param"><span class="n">filename</span></em>, <em class="sig-param"><span class="n">PA1</span></em>, <em class="sig-param"><span class="n">idx1</span></em>, <em class="sig-param"><span class="n">idx2</span></em>, <em class="sig-param"><span class="n">PA</span></em>, <em class="sig-param"><span class="n">sym_typ</span></em><span class="sig-paren">)</span><a class="headerlink" href="#feynman.S_add_sym_on_pareto.add_sym_on_pareto" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-feynman.S_brute_force">
+<span id="feynman-s-brute-force-module"></span><h2>feynman.S_brute_force module<a class="headerlink" href="#module-feynman.S_brute_force" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="feynman.S_brute_force.brute_force">
+<code class="sig-prename descclassname">feynman.S_brute_force.</code><code class="sig-name descname">brute_force</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pathdir</span></em>, <em class="sig-param"><span class="n">filename</span></em>, <em class="sig-param"><span class="n">BF_try_time</span></em>, <em class="sig-param"><span class="n">BF_ops_file_type</span></em>, <em class="sig-param"><span class="n">sep_type</span><span class="o">=</span><span class="default_value">'*'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#feynman.S_brute_force.brute_force" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-feynman.S_brute_force_number">
+<span id="feynman-s-brute-force-number-module"></span><h2>feynman.S_brute_force_number module<a class="headerlink" href="#module-feynman.S_brute_force_number" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="feynman.S_brute_force_number.brute_force_number">
+<code class="sig-prename descclassname">feynman.S_brute_force_number.</code><code class="sig-name descname">brute_force_number</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pathdir</span></em>, <em class="sig-param"><span class="n">filename</span></em><span class="sig-paren">)</span><a class="headerlink" href="#feynman.S_brute_force_number.brute_force_number" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-feynman.S_change_output">
+<span id="feynman-s-change-output-module"></span><h2>feynman.S_change_output module<a class="headerlink" href="#module-feynman.S_change_output" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="feynman.S_change_output.get_acos">
+<code class="sig-prename descclassname">feynman.S_change_output.</code><code class="sig-name descname">get_acos</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pathdir</span></em>, <em class="sig-param"><span class="n">pathdir_write_to</span></em>, <em class="sig-param"><span class="n">filename</span></em>, <em class="sig-param"><span class="n">BF_try_time</span></em>, <em class="sig-param"><span class="n">BF_ops_file_type</span></em>, <em class="sig-param"><span class="n">PA</span></em>, <em class="sig-param"><span class="n">polyfit_deg</span><span class="o">=</span><span class="default_value">3</span></em><span class="sig-paren">)</span><a class="headerlink" href="#feynman.S_change_output.get_acos" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="feynman.S_change_output.get_asin">
+<code class="sig-prename descclassname">feynman.S_change_output.</code><code class="sig-name descname">get_asin</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pathdir</span></em>, <em class="sig-param"><span class="n">pathdir_write_to</span></em>, <em class="sig-param"><span class="n">filename</span></em>, <em class="sig-param"><span class="n">BF_try_time</span></em>, <em class="sig-param"><span class="n">BF_ops_file_type</span></em>, <em class="sig-param"><span class="n">PA</span></em>, <em class="sig-param"><span class="n">polyfit_deg</span><span class="o">=</span><span class="default_value">3</span></em><span class="sig-paren">)</span><a class="headerlink" href="#feynman.S_change_output.get_asin" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="feynman.S_change_output.get_atan">
+<code class="sig-prename descclassname">feynman.S_change_output.</code><code class="sig-name descname">get_atan</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pathdir</span></em>, <em class="sig-param"><span class="n">pathdir_write_to</span></em>, <em class="sig-param"><span class="n">filename</span></em>, <em class="sig-param"><span class="n">BF_try_time</span></em>, <em class="sig-param"><span class="n">BF_ops_file_type</span></em>, <em class="sig-param"><span class="n">PA</span></em>, <em class="sig-param"><span class="n">polyfit_deg</span><span class="o">=</span><span class="default_value">3</span></em><span class="sig-paren">)</span><a class="headerlink" href="#feynman.S_change_output.get_atan" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="feynman.S_change_output.get_cos">
+<code class="sig-prename descclassname">feynman.S_change_output.</code><code class="sig-name descname">get_cos</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pathdir</span></em>, <em class="sig-param"><span class="n">pathdir_write_to</span></em>, <em class="sig-param"><span class="n">filename</span></em>, <em class="sig-param"><span class="n">BF_try_time</span></em>, <em class="sig-param"><span class="n">BF_ops_file_type</span></em>, <em class="sig-param"><span class="n">PA</span></em>, <em class="sig-param"><span class="n">polyfit_deg</span><span class="o">=</span><span class="default_value">3</span></em><span class="sig-paren">)</span><a class="headerlink" href="#feynman.S_change_output.get_cos" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="feynman.S_change_output.get_exp">
+<code class="sig-prename descclassname">feynman.S_change_output.</code><code class="sig-name descname">get_exp</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pathdir</span></em>, <em class="sig-param"><span class="n">pathdir_write_to</span></em>, <em class="sig-param"><span class="n">filename</span></em>, <em class="sig-param"><span class="n">BF_try_time</span></em>, <em class="sig-param"><span class="n">BF_ops_file_type</span></em>, <em class="sig-param"><span class="n">PA</span></em>, <em class="sig-param"><span class="n">polyfit_deg</span><span class="o">=</span><span class="default_value">3</span></em><span class="sig-paren">)</span><a class="headerlink" href="#feynman.S_change_output.get_exp" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="feynman.S_change_output.get_inverse">
+<code class="sig-prename descclassname">feynman.S_change_output.</code><code class="sig-name descname">get_inverse</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pathdir</span></em>, <em class="sig-param"><span class="n">pathdir_write_to</span></em>, <em class="sig-param"><span class="n">filename</span></em>, <em class="sig-param"><span class="n">BF_try_time</span></em>, <em class="sig-param"><span class="n">BF_ops_file_type</span></em>, <em class="sig-param"><span class="n">PA</span></em>, <em class="sig-param"><span class="n">polyfit_deg</span><span class="o">=</span><span class="default_value">3</span></em><span class="sig-paren">)</span><a class="headerlink" href="#feynman.S_change_output.get_inverse" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="feynman.S_change_output.get_log">
+<code class="sig-prename descclassname">feynman.S_change_output.</code><code class="sig-name descname">get_log</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pathdir</span></em>, <em class="sig-param"><span class="n">pathdir_write_to</span></em>, <em class="sig-param"><span class="n">filename</span></em>, <em class="sig-param"><span class="n">BF_try_time</span></em>, <em class="sig-param"><span class="n">BF_ops_file_type</span></em>, <em class="sig-param"><span class="n">PA</span></em>, <em class="sig-param"><span class="n">polyfit_deg</span><span class="o">=</span><span class="default_value">3</span></em><span class="sig-paren">)</span><a class="headerlink" href="#feynman.S_change_output.get_log" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="feynman.S_change_output.get_sin">
+<code class="sig-prename descclassname">feynman.S_change_output.</code><code class="sig-name descname">get_sin</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pathdir</span></em>, <em class="sig-param"><span class="n">pathdir_write_to</span></em>, <em class="sig-param"><span class="n">filename</span></em>, <em class="sig-param"><span class="n">BF_try_time</span></em>, <em class="sig-param"><span class="n">BF_ops_file_type</span></em>, <em class="sig-param"><span class="n">PA</span></em>, <em class="sig-param"><span class="n">polyfit_deg</span><span class="o">=</span><span class="default_value">3</span></em><span class="sig-paren">)</span><a class="headerlink" href="#feynman.S_change_output.get_sin" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="feynman.S_change_output.get_sqrt">
+<code class="sig-prename descclassname">feynman.S_change_output.</code><code class="sig-name descname">get_sqrt</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pathdir</span></em>, <em class="sig-param"><span class="n">pathdir_write_to</span></em>, <em class="sig-param"><span class="n">filename</span></em>, <em class="sig-param"><span class="n">BF_try_time</span></em>, <em class="sig-param"><span class="n">BF_ops_file_type</span></em>, <em class="sig-param"><span class="n">PA</span></em>, <em class="sig-param"><span class="n">polyfit_deg</span><span class="o">=</span><span class="default_value">3</span></em><span class="sig-paren">)</span><a class="headerlink" href="#feynman.S_change_output.get_sqrt" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="feynman.S_change_output.get_squared">
+<code class="sig-prename descclassname">feynman.S_change_output.</code><code class="sig-name descname">get_squared</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pathdir</span></em>, <em class="sig-param"><span class="n">pathdir_write_to</span></em>, <em class="sig-param"><span class="n">filename</span></em>, <em class="sig-param"><span class="n">BF_try_time</span></em>, <em class="sig-param"><span class="n">BF_ops_file_type</span></em>, <em class="sig-param"><span class="n">PA</span></em>, <em class="sig-param"><span class="n">polyfit_deg</span><span class="o">=</span><span class="default_value">3</span></em><span class="sig-paren">)</span><a class="headerlink" href="#feynman.S_change_output.get_squared" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="feynman.S_change_output.get_tan">
+<code class="sig-prename descclassname">feynman.S_change_output.</code><code class="sig-name descname">get_tan</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pathdir</span></em>, <em class="sig-param"><span class="n">pathdir_write_to</span></em>, <em class="sig-param"><span class="n">filename</span></em>, <em class="sig-param"><span class="n">BF_try_time</span></em>, <em class="sig-param"><span class="n">BF_ops_file_type</span></em>, <em class="sig-param"><span class="n">PA</span></em>, <em class="sig-param"><span class="n">polyfit_deg</span><span class="o">=</span><span class="default_value">3</span></em><span class="sig-paren">)</span><a class="headerlink" href="#feynman.S_change_output.get_tan" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-feynman.S_combine_pareto">
+<span id="feynman-s-combine-pareto-module"></span><h2>feynman.S_combine_pareto module<a class="headerlink" href="#module-feynman.S_combine_pareto" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="feynman.S_combine_pareto.combine_pareto">
+<code class="sig-prename descclassname">feynman.S_combine_pareto.</code><code class="sig-name descname">combine_pareto</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">input_data</span></em>, <em class="sig-param"><span class="n">PA1</span></em>, <em class="sig-param"><span class="n">PA2</span></em>, <em class="sig-param"><span class="n">idx_list_1</span></em>, <em class="sig-param"><span class="n">idx_list_2</span></em>, <em class="sig-param"><span class="n">PA</span></em>, <em class="sig-param"><span class="n">sep_type</span><span class="o">=</span><span class="default_value">'+'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#feynman.S_combine_pareto.combine_pareto" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="feynman-s-compositionality-module">
+<h2>feynman.S_compositionality module<a class="headerlink" href="#feynman-s-compositionality-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-feynman.S_final_gd">
+<span id="feynman-s-final-gd-module"></span><h2>feynman.S_final_gd module<a class="headerlink" href="#module-feynman.S_final_gd" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="feynman.S_final_gd.final_gd">
+<code class="sig-prename descclassname">feynman.S_final_gd.</code><code class="sig-name descname">final_gd</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">data</span></em>, <em class="sig-param"><span class="n">math_expr</span></em>, <em class="sig-param"><span class="n">lr</span><span class="o">=</span><span class="default_value">0.01</span></em>, <em class="sig-param"><span class="n">N_epochs</span><span class="o">=</span><span class="default_value">5000</span></em><span class="sig-paren">)</span><a class="headerlink" href="#feynman.S_final_gd.final_gd" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="feynman-s-gen-sym-module">
+<h2>feynman.S_gen_sym module<a class="headerlink" href="#feynman-s-gen-sym-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-feynman.S_get_expr_complexity">
+<span id="feynman-s-get-expr-complexity-module"></span><h2>feynman.S_get_expr_complexity module<a class="headerlink" href="#module-feynman.S_get_expr_complexity" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="feynman.S_get_expr_complexity.get_expr_complexity">
+<code class="sig-prename descclassname">feynman.S_get_expr_complexity.</code><code class="sig-name descname">get_expr_complexity</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">expr</span></em><span class="sig-paren">)</span><a class="headerlink" href="#feynman.S_get_expr_complexity.get_expr_complexity" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-feynman.S_get_number_DL">
+<span id="feynman-s-get-number-dl-module"></span><h2>feynman.S_get_number_DL module<a class="headerlink" href="#module-feynman.S_get_number_DL" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="feynman.S_get_number_DL.get_number_DL">
+<code class="sig-prename descclassname">feynman.S_get_number_DL.</code><code class="sig-name descname">get_number_DL</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">n</span></em><span class="sig-paren">)</span><a class="headerlink" href="#feynman.S_get_number_DL.get_number_DL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-feynman.S_get_number_DL_snapped">
+<span id="feynman-s-get-number-dl-snapped-module"></span><h2>feynman.S_get_number_DL_snapped module<a class="headerlink" href="#module-feynman.S_get_number_DL_snapped" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="feynman.S_get_number_DL_snapped.get_number_DL_snapped">
+<code class="sig-prename descclassname">feynman.S_get_number_DL_snapped.</code><code class="sig-name descname">get_number_DL_snapped</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">n</span></em><span class="sig-paren">)</span><a class="headerlink" href="#feynman.S_get_number_DL_snapped.get_number_DL_snapped" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-feynman.S_get_symbolic_expr_error">
+<span id="feynman-s-get-symbolic-expr-error-module"></span><h2>feynman.S_get_symbolic_expr_error module<a class="headerlink" href="#module-feynman.S_get_symbolic_expr_error" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="feynman.S_get_symbolic_expr_error.get_symbolic_expr_error">
+<code class="sig-prename descclassname">feynman.S_get_symbolic_expr_error.</code><code class="sig-name descname">get_symbolic_expr_error</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">data</span></em>, <em class="sig-param"><span class="n">expr</span></em><span class="sig-paren">)</span><a class="headerlink" href="#feynman.S_get_symbolic_expr_error.get_symbolic_expr_error" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-feynman.S_polyfit">
+<span id="feynman-s-polyfit-module"></span><h2>feynman.S_polyfit module<a class="headerlink" href="#module-feynman.S_polyfit" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="feynman.S_polyfit.mk_sympy_function">
+<code class="sig-prename descclassname">feynman.S_polyfit.</code><code class="sig-name descname">mk_sympy_function</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">coeffs</span></em>, <em class="sig-param"><span class="n">num_covariates</span></em>, <em class="sig-param"><span class="n">deg</span></em><span class="sig-paren">)</span><a class="headerlink" href="#feynman.S_polyfit.mk_sympy_function" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="feynman.S_polyfit.polyfit">
+<code class="sig-prename descclassname">feynman.S_polyfit.</code><code class="sig-name descname">polyfit</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">maxdeg</span></em>, <em class="sig-param"><span class="n">filename</span></em><span class="sig-paren">)</span><a class="headerlink" href="#feynman.S_polyfit.polyfit" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-feynman.S_polyfit_utils">
+<span id="feynman-s-polyfit-utils-module"></span><h2>feynman.S_polyfit_utils module<a class="headerlink" href="#module-feynman.S_polyfit_utils" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="feynman.S_polyfit_utils.as_tall">
+<code class="sig-prename descclassname">feynman.S_polyfit_utils.</code><code class="sig-name descname">as_tall</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x</span></em><span class="sig-paren">)</span><a class="headerlink" href="#feynman.S_polyfit_utils.as_tall" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="feynman.S_polyfit_utils.basis_vector">
+<code class="sig-prename descclassname">feynman.S_polyfit_utils.</code><code class="sig-name descname">basis_vector</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">n</span></em>, <em class="sig-param"><span class="n">i</span></em><span class="sig-paren">)</span><a class="headerlink" href="#feynman.S_polyfit_utils.basis_vector" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="feynman.S_polyfit_utils.getBest">
+<code class="sig-prename descclassname">feynman.S_polyfit_utils.</code><code class="sig-name descname">getBest</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">xs</span></em>, <em class="sig-param"><span class="n">y</span></em>, <em class="sig-param"><span class="n">max_deg</span></em><span class="sig-paren">)</span><a class="headerlink" href="#feynman.S_polyfit_utils.getBest" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="feynman.S_polyfit_utils.multipolyfit">
+<code class="sig-prename descclassname">feynman.S_polyfit_utils.</code><code class="sig-name descname">multipolyfit</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">xs</span></em>, <em class="sig-param"><span class="n">y</span></em>, <em class="sig-param"><span class="n">deg</span></em><span class="sig-paren">)</span><a class="headerlink" href="#feynman.S_polyfit_utils.multipolyfit" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-feynman.S_remove_input_neuron">
+<span id="feynman-s-remove-input-neuron-module"></span><h2>feynman.S_remove_input_neuron module<a class="headerlink" href="#module-feynman.S_remove_input_neuron" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="feynman.S_remove_input_neuron.remove_input_neuron">
+<code class="sig-prename descclassname">feynman.S_remove_input_neuron.</code><code class="sig-name descname">remove_input_neuron</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">net</span></em>, <em class="sig-param"><span class="n">n_inp</span></em>, <em class="sig-param"><span class="n">idx_neuron</span></em>, <em class="sig-param"><span class="n">ct_median</span></em>, <em class="sig-param"><span class="n">save_filename</span></em><span class="sig-paren">)</span><a class="headerlink" href="#feynman.S_remove_input_neuron.remove_input_neuron" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-feynman.S_run_aifeynman">
+<span id="feynman-s-run-aifeynman-module"></span><h2>feynman.S_run_aifeynman module<a class="headerlink" href="#module-feynman.S_run_aifeynman" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="feynman.S_run_aifeynman.run_AI_all">
+<code class="sig-prename descclassname">feynman.S_run_aifeynman.</code><code class="sig-name descname">run_AI_all</code><span class="sig-paren">(</span><em class="sig-param">pathdir</em>, <em class="sig-param">filename</em>, <em class="sig-param">BF_try_time=60</em>, <em class="sig-param">BF_ops_file_type='14ops'</em>, <em class="sig-param">polyfit_deg=3</em>, <em class="sig-param">NN_epochs=4000</em>, <em class="sig-param">PA=ParetoSet([]</em>, <em class="sig-param">key=&lt;function ParetoSet.__init__.&lt;locals&gt;.&lt;lambda&gt;&gt;)</em><span class="sig-paren">)</span><a class="headerlink" href="#feynman.S_run_aifeynman.run_AI_all" title="Permalink to this definition">¶</a></dt>
+<dd><p>Runs AI Feynman.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>pathdir</strong> (<em>str</em>) – path to workspace</p></li>
+<li><p><strong>filename</strong> (<em>str</em>) – name of dataset file</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>the pareto frontier of solutions</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#feynman.get_pareto.ParetoSet" title="feynman.get_pareto.ParetoSet">ParetoSet</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="feynman.S_run_aifeynman.run_aifeynman">
+<code class="sig-prename descclassname">feynman.S_run_aifeynman.</code><code class="sig-name descname">run_aifeynman</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pathdir</span></em>, <em class="sig-param"><span class="n">filename</span></em>, <em class="sig-param"><span class="n">BF_try_time</span></em>, <em class="sig-param"><span class="n">BF_ops_file_type</span></em>, <em class="sig-param"><span class="n">polyfit_deg</span><span class="o">=</span><span class="default_value">3</span></em>, <em class="sig-param"><span class="n">NN_epochs</span><span class="o">=</span><span class="default_value">4000</span></em>, <em class="sig-param"><span class="n">vars_name</span><span class="o">=</span><span class="default_value">[]</span></em>, <em class="sig-param"><span class="n">test_percentage</span><span class="o">=</span><span class="default_value">0</span></em><span class="sig-paren">)</span><a class="headerlink" href="#feynman.S_run_aifeynman.run_aifeynman" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-feynman.S_run_bf_polyfit">
+<span id="feynman-s-run-bf-polyfit-module"></span><h2>feynman.S_run_bf_polyfit module<a class="headerlink" href="#module-feynman.S_run_bf_polyfit" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="feynman.S_run_bf_polyfit.run_bf_polyfit">
+<code class="sig-prename descclassname">feynman.S_run_bf_polyfit.</code><code class="sig-name descname">run_bf_polyfit</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pathdir</span></em>, <em class="sig-param"><span class="n">pathdir_transformed</span></em>, <em class="sig-param"><span class="n">filename</span></em>, <em class="sig-param"><span class="n">BF_try_time</span></em>, <em class="sig-param"><span class="n">BF_ops_file_type</span></em>, <em class="sig-param"><span class="n">PA</span></em>, <em class="sig-param"><span class="n">polyfit_deg</span><span class="o">=</span><span class="default_value">3</span></em>, <em class="sig-param"><span class="n">output_type</span><span class="o">=</span><span class="default_value">''</span></em><span class="sig-paren">)</span><a class="headerlink" href="#feynman.S_run_bf_polyfit.run_bf_polyfit" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-feynman.S_separability">
+<span id="feynman-s-separability-module"></span><h2>feynman.S_separability module<a class="headerlink" href="#module-feynman.S_separability" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="feynman.S_separability.SimpleNet">
+<em class="property">class </em><code class="sig-prename descclassname">feynman.S_separability.</code><code class="sig-name descname">SimpleNet</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">ni</span></em><span class="sig-paren">)</span><a class="headerlink" href="#feynman.S_separability.SimpleNet" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<dl class="py method">
+<dt id="feynman.S_separability.SimpleNet.forward">
+<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x</span></em><span class="sig-paren">)</span><a class="headerlink" href="#feynman.S_separability.SimpleNet.forward" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="feynman.S_separability.SimpleNet.training">
+<code class="sig-name descname">training</code><em class="property">: bool</em><a class="headerlink" href="#feynman.S_separability.SimpleNet.training" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt id="feynman.S_separability.check_separability_multiply">
+<code class="sig-prename descclassname">feynman.S_separability.</code><code class="sig-name descname">check_separability_multiply</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pathdir</span></em>, <em class="sig-param"><span class="n">filename</span></em><span class="sig-paren">)</span><a class="headerlink" href="#feynman.S_separability.check_separability_multiply" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="feynman.S_separability.check_separability_plus">
+<code class="sig-prename descclassname">feynman.S_separability.</code><code class="sig-name descname">check_separability_plus</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pathdir</span></em>, <em class="sig-param"><span class="n">filename</span></em><span class="sig-paren">)</span><a class="headerlink" href="#feynman.S_separability.check_separability_plus" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="feynman.S_separability.do_separability_multiply">
+<code class="sig-prename descclassname">feynman.S_separability.</code><code class="sig-name descname">do_separability_multiply</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pathdir</span></em>, <em class="sig-param"><span class="n">filename</span></em>, <em class="sig-param"><span class="n">list_i</span></em>, <em class="sig-param"><span class="n">list_j</span></em><span class="sig-paren">)</span><a class="headerlink" href="#feynman.S_separability.do_separability_multiply" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="feynman.S_separability.do_separability_plus">
+<code class="sig-prename descclassname">feynman.S_separability.</code><code class="sig-name descname">do_separability_plus</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pathdir</span></em>, <em class="sig-param"><span class="n">filename</span></em>, <em class="sig-param"><span class="n">list_i</span></em>, <em class="sig-param"><span class="n">list_j</span></em><span class="sig-paren">)</span><a class="headerlink" href="#feynman.S_separability.do_separability_plus" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="feynman.S_separability.rmse_loss">
+<code class="sig-prename descclassname">feynman.S_separability.</code><code class="sig-name descname">rmse_loss</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pred</span></em>, <em class="sig-param"><span class="n">targ</span></em><span class="sig-paren">)</span><a class="headerlink" href="#feynman.S_separability.rmse_loss" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-feynman.S_snap">
+<span id="feynman-s-snap-module"></span><h2>feynman.S_snap module<a class="headerlink" href="#module-feynman.S_snap" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="feynman.S_snap.bestApproximation">
+<code class="sig-prename descclassname">feynman.S_snap.</code><code class="sig-name descname">bestApproximation</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x</span></em>, <em class="sig-param"><span class="n">imax</span></em><span class="sig-paren">)</span><a class="headerlink" href="#feynman.S_snap.bestApproximation" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="feynman.S_snap.integerSnap">
+<code class="sig-prename descclassname">feynman.S_snap.</code><code class="sig-name descname">integerSnap</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">p</span></em>, <em class="sig-param"><span class="n">top</span><span class="o">=</span><span class="default_value">1</span></em><span class="sig-paren">)</span><a class="headerlink" href="#feynman.S_snap.integerSnap" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="feynman.S_snap.rationalSnap">
+<code class="sig-prename descclassname">feynman.S_snap.</code><code class="sig-name descname">rationalSnap</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">p</span></em>, <em class="sig-param"><span class="n">top</span><span class="o">=</span><span class="default_value">1</span></em><span class="sig-paren">)</span><a class="headerlink" href="#feynman.S_snap.rationalSnap" title="Permalink to this definition">¶</a></dt>
+<dd><p>Snap to nearest rational number using continued fraction.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="feynman.S_snap.zeroSnap">
+<code class="sig-prename descclassname">feynman.S_snap.</code><code class="sig-name descname">zeroSnap</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">p</span></em>, <em class="sig-param"><span class="n">top</span><span class="o">=</span><span class="default_value">1</span></em><span class="sig-paren">)</span><a class="headerlink" href="#feynman.S_snap.zeroSnap" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-feynman.S_symmetry">
+<span id="feynman-s-symmetry-module"></span><h2>feynman.S_symmetry module<a class="headerlink" href="#module-feynman.S_symmetry" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="feynman.S_symmetry.SimpleNet">
+<em class="property">class </em><code class="sig-prename descclassname">feynman.S_symmetry.</code><code class="sig-name descname">SimpleNet</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">ni</span></em><span class="sig-paren">)</span><a class="headerlink" href="#feynman.S_symmetry.SimpleNet" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<dl class="py method">
+<dt id="feynman.S_symmetry.SimpleNet.forward">
+<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x</span></em><span class="sig-paren">)</span><a class="headerlink" href="#feynman.S_symmetry.SimpleNet.forward" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="feynman.S_symmetry.SimpleNet.training">
+<code class="sig-name descname">training</code><em class="property">: bool</em><a class="headerlink" href="#feynman.S_symmetry.SimpleNet.training" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt id="feynman.S_symmetry.check_translational_symmetry_divide">
+<code class="sig-prename descclassname">feynman.S_symmetry.</code><code class="sig-name descname">check_translational_symmetry_divide</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pathdir</span></em>, <em class="sig-param"><span class="n">filename</span></em><span class="sig-paren">)</span><a class="headerlink" href="#feynman.S_symmetry.check_translational_symmetry_divide" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="feynman.S_symmetry.check_translational_symmetry_minus">
+<code class="sig-prename descclassname">feynman.S_symmetry.</code><code class="sig-name descname">check_translational_symmetry_minus</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pathdir</span></em>, <em class="sig-param"><span class="n">filename</span></em><span class="sig-paren">)</span><a class="headerlink" href="#feynman.S_symmetry.check_translational_symmetry_minus" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="feynman.S_symmetry.check_translational_symmetry_multiply">
+<code class="sig-prename descclassname">feynman.S_symmetry.</code><code class="sig-name descname">check_translational_symmetry_multiply</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pathdir</span></em>, <em class="sig-param"><span class="n">filename</span></em><span class="sig-paren">)</span><a class="headerlink" href="#feynman.S_symmetry.check_translational_symmetry_multiply" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="feynman.S_symmetry.check_translational_symmetry_plus">
+<code class="sig-prename descclassname">feynman.S_symmetry.</code><code class="sig-name descname">check_translational_symmetry_plus</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pathdir</span></em>, <em class="sig-param"><span class="n">filename</span></em><span class="sig-paren">)</span><a class="headerlink" href="#feynman.S_symmetry.check_translational_symmetry_plus" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="feynman.S_symmetry.do_translational_symmetry_divide">
+<code class="sig-prename descclassname">feynman.S_symmetry.</code><code class="sig-name descname">do_translational_symmetry_divide</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pathdir</span></em>, <em class="sig-param"><span class="n">filename</span></em>, <em class="sig-param"><span class="n">i</span></em>, <em class="sig-param"><span class="n">j</span></em><span class="sig-paren">)</span><a class="headerlink" href="#feynman.S_symmetry.do_translational_symmetry_divide" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="feynman.S_symmetry.do_translational_symmetry_minus">
+<code class="sig-prename descclassname">feynman.S_symmetry.</code><code class="sig-name descname">do_translational_symmetry_minus</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pathdir</span></em>, <em class="sig-param"><span class="n">filename</span></em>, <em class="sig-param"><span class="n">i</span></em>, <em class="sig-param"><span class="n">j</span></em><span class="sig-paren">)</span><a class="headerlink" href="#feynman.S_symmetry.do_translational_symmetry_minus" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="feynman.S_symmetry.do_translational_symmetry_multiply">
+<code class="sig-prename descclassname">feynman.S_symmetry.</code><code class="sig-name descname">do_translational_symmetry_multiply</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pathdir</span></em>, <em class="sig-param"><span class="n">filename</span></em>, <em class="sig-param"><span class="n">i</span></em>, <em class="sig-param"><span class="n">j</span></em><span class="sig-paren">)</span><a class="headerlink" href="#feynman.S_symmetry.do_translational_symmetry_multiply" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="feynman.S_symmetry.do_translational_symmetry_plus">
+<code class="sig-prename descclassname">feynman.S_symmetry.</code><code class="sig-name descname">do_translational_symmetry_plus</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pathdir</span></em>, <em class="sig-param"><span class="n">filename</span></em>, <em class="sig-param"><span class="n">i</span></em>, <em class="sig-param"><span class="n">j</span></em><span class="sig-paren">)</span><a class="headerlink" href="#feynman.S_symmetry.do_translational_symmetry_plus" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="feynman.S_symmetry.rmse_loss">
+<code class="sig-prename descclassname">feynman.S_symmetry.</code><code class="sig-name descname">rmse_loss</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pred</span></em>, <em class="sig-param"><span class="n">targ</span></em><span class="sig-paren">)</span><a class="headerlink" href="#feynman.S_symmetry.rmse_loss" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-feynman.dimensionalAnalysis">
+<span id="feynman-dimensionalanalysis-module"></span><h2>feynman.dimensionalAnalysis module<a class="headerlink" href="#module-feynman.dimensionalAnalysis" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="feynman.dimensionalAnalysis.dimensionalAnalysis">
+<code class="sig-prename descclassname">feynman.dimensionalAnalysis.</code><code class="sig-name descname">dimensionalAnalysis</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pathdir</span></em>, <em class="sig-param"><span class="n">filename</span></em>, <em class="sig-param"><span class="n">eq_symbols</span></em><span class="sig-paren">)</span><a class="headerlink" href="#feynman.dimensionalAnalysis.dimensionalAnalysis" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="feynman.dimensionalAnalysis.dimensional_analysis">
+<code class="sig-prename descclassname">feynman.dimensionalAnalysis.</code><code class="sig-name descname">dimensional_analysis</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">input</span></em>, <em class="sig-param"><span class="n">output</span></em>, <em class="sig-param"><span class="n">units</span></em><span class="sig-paren">)</span><a class="headerlink" href="#feynman.dimensionalAnalysis.dimensional_analysis" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="feynman.dimensionalAnalysis.load_data">
+<code class="sig-prename descclassname">feynman.dimensionalAnalysis.</code><code class="sig-name descname">load_data</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pathdir</span></em>, <em class="sig-param"><span class="n">filename</span></em><span class="sig-paren">)</span><a class="headerlink" href="#feynman.dimensionalAnalysis.load_data" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-feynman.getPowers">
+<span id="feynman-getpowers-module"></span><h2>feynman.getPowers module<a class="headerlink" href="#module-feynman.getPowers" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="feynman.getPowers.getPowers">
+<code class="sig-prename descclassname">feynman.getPowers.</code><code class="sig-name descname">getPowers</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">N</span></em>, <em class="sig-param"><span class="n">a</span></em><span class="sig-paren">)</span><a class="headerlink" href="#feynman.getPowers.getPowers" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-feynman.get_pareto">
+<span id="feynman-get-pareto-module"></span><h2>feynman.get_pareto module<a class="headerlink" href="#module-feynman.get_pareto" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="feynman.get_pareto.ParetoSet">
+<em class="property">class </em><code class="sig-prename descclassname">feynman.get_pareto.</code><code class="sig-name descname">ParetoSet</code><span class="sig-paren">(</span><em class="sig-param">iterable=None</em>, <em class="sig-param">key=&lt;function identity&gt;</em><span class="sig-paren">)</span><a class="headerlink" href="#feynman.get_pareto.ParetoSet" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">sortedcontainers.sortedlist.SortedKeyList</span></code></p>
+<p>Maintained maximal set with efficient insertion. Note that we use the convention of smaller the better.</p>
+<dl class="py method">
+<dt id="feynman.get_pareto.ParetoSet.add">
+<code class="sig-name descname">add</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">p</span></em><span class="sig-paren">)</span><a class="headerlink" href="#feynman.get_pareto.ParetoSet.add" title="Permalink to this definition">¶</a></dt>
+<dd><p>Insert Point into set if minimal in first two indices.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>p (Point): Point to insert</p>
+</dd>
+<dt>Returns:</dt><dd><p>bool: True only if point is inserted</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="feynman.get_pareto.ParetoSet.distance">
+<code class="sig-name descname">distance</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">p</span></em><span class="sig-paren">)</span><a class="headerlink" href="#feynman.get_pareto.ParetoSet.distance" title="Permalink to this definition">¶</a></dt>
+<dd><p>Given a Point, calculate the minimum Euclidean distance to pareto
+frontier (in first two indices).</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>p (Point): point</p>
+</dd>
+<dt>Returns:</dt><dd><p>float: minimum Euclidean distance to pareto frontier</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="feynman.get_pareto.ParetoSet.dominant_array">
+<code class="sig-name descname">dominant_array</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">p</span></em><span class="sig-paren">)</span><a class="headerlink" href="#feynman.get_pareto.ParetoSet.dominant_array" title="Permalink to this definition">¶</a></dt>
+<dd><p>Given a Point, return the set of dominating points in the set (in
+the first two indices).</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>p (Point): point</p>
+</dd>
+<dt>Returns:</dt><dd><p>numpy.ndarray: array of dominating points</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="feynman.get_pareto.ParetoSet.from_list">
+<code class="sig-name descname">from_list</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">A</span></em><span class="sig-paren">)</span><a class="headerlink" href="#feynman.get_pareto.ParetoSet.from_list" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert iterable of Points into ParetoSet.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>A (iterator): iterator of Points</p>
+</dd>
+<dt>Returns:</dt><dd><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="feynman.get_pareto.ParetoSet.get_id_list">
+<code class="sig-name descname">get_id_list</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#feynman.get_pareto.ParetoSet.get_id_list" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="feynman.get_pareto.ParetoSet.get_pareto_points">
+<code class="sig-name descname">get_pareto_points</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#feynman.get_pareto.ParetoSet.get_pareto_points" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the x, y and data for each point in the pareto frontier</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="feynman.get_pareto.ParetoSet.plot">
+<code class="sig-name descname">plot</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#feynman.get_pareto.ParetoSet.plot" title="Permalink to this definition">¶</a></dt>
+<dd><p>Plotting the Pareto frontier.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="feynman.get_pareto.ParetoSet.to_array">
+<code class="sig-name descname">to_array</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#feynman.get_pareto.ParetoSet.to_array" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert first two indices to numpy.ndarray</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>None</p>
+</dd>
+<dt>Returns:</dt><dd><p>numpy.ndarray: array of shape (len(self), 2)</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="feynman.get_pareto.Point">
+<em class="property">class </em><code class="sig-prename descclassname">feynman.get_pareto.</code><code class="sig-name descname">Point</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x</span></em>, <em class="sig-param"><span class="n">y</span></em>, <em class="sig-param"><span class="n">data</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">id</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#feynman.get_pareto.Point" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-feynman.resources">
+<span id="feynman-resources-module"></span><h2>feynman.resources module<a class="headerlink" href="#module-feynman.resources" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-feynman">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-feynman" title="Permalink to this headline">¶</a></h2>
+<p>AI Feynman</p>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">AI Feynman</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, Udrescu et al..
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.2.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/feynman.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

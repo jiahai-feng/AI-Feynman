@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Feynman &#8212; AI Feynman  documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="ai-feynman">
+<h1>AI Feynman<a class="headerlink" href="#ai-feynman" title="Permalink to this headline">¶</a></h1>
+<p>This code is an improved implementation of AI Feynman: a Physics-Inspired Method for Symbolic Regression, Silviu-Marian Udrescu and Max Tegmark (2019) <a class="reference external" href="https://advances.sciencemag.org/content/6/16/eaay2631/tab-pdf">[Science Advances]</a> and AI Feynman 2.0: Pareto-optimal symbolic regression exploiting graph modularity, Udrescu S.M. et al. (2020) <a class="reference external" href="https://arxiv.org/abs/2006.10782">[arXiv]</a>.</p>
+<p>Example usage:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">feynman</span> <span class="kn">import</span> <span class="n">run_aifeynman</span>
+
+<span class="n">run_aifeynman</span><span class="p">(</span><span class="s2">&quot;../example_data/&quot;</span><span class="p">,</span> <span class="s2">&quot;example1.txt&quot;</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span>
+              <span class="s2">&quot;14ops.txt&quot;</span><span class="p">,</span> <span class="n">polyfit_deg</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">NN_epochs</span><span class="o">=</span><span class="mi">500</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Where ‘example1.txt’ contains tab separated data that the regression is performed over, and ‘14ops.txt’ contains the operations the regression is permitted to use.</p>
+</div>
+<div class="section" id="installation-from-source">
+<h1>Installation (From source)<a class="headerlink" href="#installation-from-source" title="Permalink to this headline">¶</a></h1>
+<p>Prereqs: (I made the numbers up)</p>
+<ul class="simple">
+<li><p>numpy (&gt;= 1.15)</p></li>
+<li><p>torch (&gt;= 1.0)</p></li>
+<li><p>wheel</p></li>
+</ul>
+<p>Build distribution:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">setup</span><span class="o">.</span><span class="n">py</span> <span class="n">sdist</span>
+</pre></div>
+</div>
+<p>Install:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">dist</span><span class="o">/</span><span class="n">feynman</span><span class="o">-</span><span class="mf">2.0</span><span class="o">.</span><span class="mf">0.</span><span class="n">tar</span><span class="o">.</span><span class="n">gz</span>
+</pre></div>
+</div>
+<p>Test:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">examples</span><span class="o">/</span><span class="n">example</span><span class="o">.</span><span class="n">py</span>
+</pre></div>
+</div>
+<span class="target" id="module-feynman.S_run_aifeynman"></span><dl class="py function">
+<dt id="feynman.S_run_aifeynman.run_AI_all">
+<code class="sig-prename descclassname">feynman.S_run_aifeynman.</code><code class="sig-name descname">run_AI_all</code><span class="sig-paren">(</span><em class="sig-param">pathdir</em>, <em class="sig-param">filename</em>, <em class="sig-param">BF_try_time=60</em>, <em class="sig-param">BF_ops_file_type='14ops'</em>, <em class="sig-param">polyfit_deg=3</em>, <em class="sig-param">NN_epochs=4000</em>, <em class="sig-param">PA=ParetoSet([]</em>, <em class="sig-param">key=&lt;function ParetoSet.__init__.&lt;locals&gt;.&lt;lambda&gt;&gt;)</em><span class="sig-paren">)</span><a class="headerlink" href="#feynman.S_run_aifeynman.run_AI_all" title="Permalink to this definition">¶</a></dt>
+<dd><p>Runs AI Feynman.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>pathdir</strong> (<em>str</em>) – path to workspace</p></li>
+<li><p><strong>filename</strong> (<em>str</em>) – name of dataset file</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>the pareto frontier of solutions</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="feynman.html#feynman.get_pareto.ParetoSet" title="feynman.get_pareto.ParetoSet">ParetoSet</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<div class="toctree-wrapper compound">
+</div>
+<p>feynman</p>
+</div>
+<div class="section" id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
+<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
+<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
+</ul>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="#">AI Feynman</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="#">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, Udrescu et al..
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.2.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/index.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

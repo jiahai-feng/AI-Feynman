@@ -26,6 +26,17 @@ from .dimensionalAnalysis import dimensionalAnalysis
 
 PA = ParetoSet()
 def run_AI_all(pathdir,filename,BF_try_time=60,BF_ops_file_type="14ops", polyfit_deg=3, NN_epochs=4000, PA=PA):
+    """Runs AI Feynman.
+
+    :param pathdir: path to workspace
+    :type pathdir: str
+    :param filename: name of dataset file
+    :type filename: str
+    
+    
+    :return: the pareto frontier of solutions
+    :rtype: ParetoSet
+    """
     try:
         os.mkdir("results/")
     except:
