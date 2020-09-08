@@ -4,6 +4,10 @@ AI Feynman
 
 This code is an improved implementation of AI Feynman: a Physics-Inspired Method for Symbolic Regression, Silviu-Marian Udrescu and Max Tegmark (2019) `[Science Advances] <https://advances.sciencemag.org/content/6/16/eaay2631/tab-pdf>`_ and AI Feynman 2.0: Pareto-optimal symbolic regression exploiting graph modularity, Udrescu S.M. et al. (2020) `[arXiv] <https://arxiv.org/abs/2006.10782>`_.
 
+
+Please check `this Medium article <https://towardsdatascience.com/ai-feynman-2-0-learning-regression-equations-from-data-3232151bd929>`_ for a more detailed explanation of how to get the code running.
+
+
 Example usage::
   
   from feynman import run_aifeynman

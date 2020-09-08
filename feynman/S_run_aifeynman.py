@@ -137,7 +137,26 @@ def run_AI_all(pathdir,filename,BF_try_time=60,BF_ops_file_type="14ops", polyfit
 
 # this runs snap on the output of aifeynman
 def run_aifeynman(pathdir,filename,BF_try_time,BF_ops_file_type, polyfit_deg=3, NN_epochs=4000, vars_name=[],test_percentage=0):
-    # If the variable names are passed, do the dimensional analysis first
+    """Runs AI Feynman. 
+    Saves the solutions to results/ directory to the file results/solution_{filename}
+
+    :param pathdir: path to the directory containing the data file
+    :type pathdir: str
+    :param filename: the name of the file containing the data
+    :type filename: str
+    :param BF_try_time: time limit for each brute force call (set by default to 60 seconds)
+    :type BF_try_time: float
+    :param BF_ops_file_type: file containing the symbols to be used in the brute force code (set by default to "14ops.txt")
+    :type BF_ops_file_type: str
+    :param polyfit_deg:  maximum degree of the polynomial tried by the polynomial fit routine (set be default to 4)
+    :type polyfit_deg: int
+    :param NN_epochs: number of epochs for the training (set by default to 4000)
+    :type NN_epochs: int
+    :param vars_name: name of the variables appearing in the equation (inluding the name ofthe output variable). This should be passed as a list of strings, with the name of the variables appearing in the same order as they are in the file containing the data
+    :type vars_name: [str]
+    :param test_percentage: percentage of the input data to be kept aside and used as the test set
+    :type test_percentage: float
+    """
     filename_orig = filename
     try:
         if vars_name!=[]:

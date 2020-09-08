@@ -1,4 +1,8 @@
-======
+.. _outputformat:
+
+=============
 Output format
-======
-good bye
+=============
+TODO
+
+Should also describe the intermediate output that's printed in the terminal.
