@@ -2,7 +2,6 @@ Sphinx==3.2.1
 commonmark==0.9.1
 recommonmark==0.6.0
 
-python >= 3.6
 torch >= 1.4.0
 matplotlib
 sympy == 1.4
