@@ -11,6 +11,7 @@ To install from PyPi, you may run::
 
     pip install aifeynman
 
+If you run into issues, please ensure that a fortran compiler (such as gfortran) is installed on your computer, and is discoverable in the system path. You may verify this by typing `gfortran --version` in the terminal. You may also try installing from source, check the FAQ, or file a new issue on `github <https://github.com/SJ001/AI-Feynman/>`_.
 
 From source
 ===========

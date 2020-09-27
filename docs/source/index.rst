@@ -1,31 +1,40 @@
 AI Feynman
 ==========
 
-
-This code is an improved implementation of AI Feynman: a Physics-Inspired Method for Symbolic Regression, Silviu-Marian Udrescu and Max Tegmark (2019) `[Science Advances] <https://advances.sciencemag.org/content/6/16/eaay2631/tab-pdf>`_ and AI Feynman 2.0: Pareto-optimal symbolic regression exploiting graph modularity, Udrescu S.M. et al. (2020) `[arXiv] <https://arxiv.org/abs/2006.10782>`_.
-
-
-Please check `this Medium article <https://towardsdatascience.com/ai-feynman-2-0-learning-regression-equations-from-data-3232151bd929>`_ for a more detailed explanation of how to get the code running.
+.. image:: _static/aifeynman-2.jpeg
+  :width: 100%
+  :alt: AI Feynman banner
 
 
-Example usage::
-  
-  from feynman import run_aifeynman
+Quickstart
+----------------
+.. code-block:: shell-session
 
-  run_aifeynman("../example_data/", "example1.txt", 30,
-                "14ops.txt", polyfit_deg=3, NN_epochs=500)
+  $ pip install aifeynman
 
-Where 'example1.txt' contains tab separated data that the regression is performed over, and '14ops.txt' contains the operations the regression is permitted to use.
+  $ python
+  >>> import aifeynman
+  >>> aifeynman.getdemos('example_data') # download examples from server
+  >>> aifeynman.launch("../example_data/", "example1.txt", 30,
+                  "14ops.txt", polyfit_deg=3, NN_epochs=500)
 
 
-Install::
+This example will get solved in about 10-30 minutes depending on what computer you have and whether you have a GPU.
 
-   pip install aifeynman
+Here 'example.txt' contains the data table to perform symbolic regression on, with columns separated by spaces, commas or tabs. The other parameters control the search: here the brute-force modules tries combinations of the 14 basic operations in '14ops.txt' for up to 30 seconds, polynomial fits are tried up to degree 3, and the interpolating neural network is trained for up to 500 epochs.
 
-Run::
+Note that for now, AI Feynman is supported only for Linux and Mac environments.
+
+More examples
+---------------------
+::
 
   python examples/example.py
 
+
+ai_feynman_example.py contains an example of running the code on some examples, found in the example_data directory, corresponding to equations I.8.14, I.10.7 and I.50.26 in Table 4 of this paper. More data files on which the code can be tested on can be found in the Feynman symbolic regression dataset.
+
+You can also find more details on how to get our code running in `this Medium article <https://towardsdatascience.com/ai-feynman-2-0-learning-regression-equations-from-data-3232151bd929>`_.
 
 .. toctree::
    :hidden:
